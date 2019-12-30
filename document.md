@@ -37,3 +37,27 @@
 ## 1.7 将本地的仓库提交到远程仓库中
 
     git push
+
+
+
+# 2. 高效使用github
+## 2.1 名称搜索
+
+    in:name xx                      // 搜索标题为xx的项目
+    in:readme xx                    // 搜索项目的readme包含xx的项目
+    in:description xx               // 搜索项目描述中包含xx的项目
+
+
+## 2.2 下载量筛选
+
+    in:name xx starts:>1000         // 下载量大于1000
+
+
+## 2.3 语言筛选
+
+    in:name xx language:javascript
+
+
+## 2.4 时间限制
+
+    in:name xx pushed:>2019-09-03

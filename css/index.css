@@ -33,10 +33,14 @@
 }
 .mask .text button {
     margin: 30px 0;
-    width: 100px;
-    height: 40px;
     border: white solid 1px;
     border-radius: 6px;
     background: none;
     color: white;
+}
+.mask .text a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
 }
