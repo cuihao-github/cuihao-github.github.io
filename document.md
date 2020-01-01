@@ -50,7 +50,7 @@
 
 ## 2.2 下载量筛选
 
-    in:name xx starts:>1000         // 下载量大于1000
+    in:name xx stars:>1000         // 下载量大于1000
 
 
 ## 2.3 语言筛选
@@ -61,3 +61,29 @@
 ## 2.4 时间限制
 
     in:name xx pushed:>2019-09-03
+
+
+
+# 3. 关联本地的仓库到远程的仓库
+
+## 3.1 清除本地的关联，防止其他关联占用
+
+    git remote rm origin
+
+## 3.2 关联本地仓库和远程仓库
+
+    git add git remote add origin xx        // xx为克隆下载的地址
+
+## 3.3 添加本地的仓库
+
+    git add .
+    git commit -m ''
+
+## 3.4 推送
+如果是第一次推送，同时确保远程仓库中没有内容，则使用如下的命令
+
+    git push -u origin master
+
+如果不是远程仓库中与README.md文件，那么我们应该使用如下的命令,表示强制推送，即会覆盖源文件
+
+    git push -f origin master
