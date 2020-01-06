@@ -87,3 +87,11 @@
 如果不是远程仓库中与README.md文件，那么我们应该使用如下的命令,表示强制推送，即会覆盖源文件
 
     git push -f origin master
+
+
+
+# 4. 同步远程仓库到本地
+
+    git pull --force  <远程主机名> <远程分支名>:<本地分支名>
+    git pull                       // 开始更新
+ 
